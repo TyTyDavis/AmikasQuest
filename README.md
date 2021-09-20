@@ -21,7 +21,7 @@ Amika's Quest consists of three dungeons, each procedurally generated so that th
 * A path branching off of the main path before the locked door, ending in a room that contains a key
 * A shop room where the player can buy items
 
-The first step was to declare a sequence of twenty numbers, each representing a room in the dungeon, with zeros representing an unused room.
+The first step was to declare a sequence of twenty numbers, each representing a room in the dungeon, with the first number in the sequence representing the top left corner. Zeros represent ununused rooms.
 
 ![The dungeon sequence](https://i.imgur.com/CaOy6v0.png)
 
