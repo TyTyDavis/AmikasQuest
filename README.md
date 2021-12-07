@@ -44,7 +44,7 @@ Now that the dungeons layout is set, we start actually building it. First, doors
 Then, each room is filled from a randomly-chosen, premade template that decides where there will be blocks that the player cnan ot walk, on, and where enemies will be placed. These templates were created using a separate Pico 8 cartridge I made that allows me to build a room in Pico 8's map editor tool and easily convert that room into a 168 character string. Each character in the string represents a tile in the room, starting at the upper left. If the character is a 1, that tile is set to a block. If it is a 2, it is set to a floor tile, and if it is an M, that tile is set to a floor tile and function is run to spawn a monster there.
 These strings are then store in large comma separated strings which are split into sequences at run time, in order to save tokens.
 
-##Enemies
+## Enemies
 The games enemy system was designed to create multiple enemy types with as little code as possible, saving more room on the cart for the game's procedural generation code. This was accomplished a few different ways:
 *Each enemy has two frames of animation that it cycles between when moving
 *There are two enemy types: those that move in the four cardinal directions, and those that move diagonally
